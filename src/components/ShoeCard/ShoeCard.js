@@ -12,7 +12,7 @@ const ShoeCard = ({
   price,
   salePrice,
   releaseDate,
-  numOfColors,
+  numOfColors
 }) => {
   // There are 3 variants possible, based on the props:
   //   - new-release
@@ -51,17 +51,23 @@ const ShoeCard = ({
 };
 
 const Link = styled.a`
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
+  width: 300px;
 `;
 
-const Wrapper = styled.article``;
+const Wrapper = styled.article`
+  display: flex;
+  flex-direction: column;
+`;
 
 const ImageWrapper = styled.div`
   position: relative;
 `;
 
-const Image = styled.img``;
+const Image = styled.img`
+  width: 300px;
+`;
 
 const Row = styled.div`
   font-size: 1rem;
